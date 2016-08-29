@@ -3,11 +3,38 @@
 	<head>
 		<title>clicker working title</title>
 		<script src = "clicker.js" type ="text/javascript"></script>
+		<link type="text/css" rel="stylesheet" href="cpage.css"/>
 	</head>
 	<body>
-		Clicks: <span id = "clicks">0</span>
+		<div id = "a">
+			Green Card $ <span id="clicks">0</span><br />
+		</div>
+		<div id = "b">
+			<button id = "mainClicker" onclick="mainClick(1)"></button><br />
+		</div>
+		<div id = "c">
+			<h3>Upgrades</h3>
+			<button id = 'herbieClicker' onclick="buyHerbie()"></button><br />
+			Herbies: <span id="herbie">0</span><br />
+			Herbie Cost: <span id="herbieCost">10</span><br />
+			
+			<button id = 'emilyClicker' onclick="buyEmily()"></button><br />
+			Emilys: <span id="emily">0</span><br />
+			Emily Cost: <span id="emilyCost">25</span><br />
 
-		<input type="button" value="click me" onclick="mainClick()">
+			<button id = 'bettyClicker' onclick="buyBetty()"></button><br />
+			Bettys: <span id="betty">0</span><br />
+			Betty Cost: <span id="bettyCost">50</span><br />
+
+		</div>
+
+		<div id = "d">
+			<h3>Purchases</h3>
+			<button id = "passport">Passport</button><br />
+			<button id = "flight">Flight</button><br />
+			<button id = "greencard">Green Card </button><br />
+		</div>
+	
 	</body>
 
 
